@@ -1,0 +1,65 @@
+```
+# Task 3: Expected Output Descriptions
+
+## Install Dependencies
+- No output (installs pandas and plotly if not already installed).
+
+## Generate Synthetic Large Dataset
+- DataFrame head:
+   RecordNumber  Country           City  Zipcode State
+0            1       US      ASHEBORO    27203   NC
+1            2       US         MESA     85210   AZ
+2            3       US   FORT WORTH    76177   TX
+3            4       US  SPRINGVILLE    35146   AL
+4            5       US   PARC PARQUE     704    PR
+
+- Schema:
+  Columns: RecordNumber (int), Country (str), City (str), Zipcode (str), State (str)
+
+## Verify Dataset Size
+Number of rows: 100000
+Number of columns: 5
+
+## Check for Missing Values
+RecordNumber    0
+Country         0
+City            0
+Zipcode         0
+State           0
+dtype: int64
+
+## Distribution of Zip Codes by State
+- Interactive bar chart saved as zip_by_state.html.
+- Example data (approximate, due to random sampling):
+  State  zip_count
+  TX     16700
+  FL     16650
+  PR     16630
+  NC     16620
+  AZ     16600
+  AL     16500
+- Description: Bar chart showing states (PR, FL, TX, AL, NC, AZ) with counts ~16,500-16,700, indicating near-uniform distribution.
+
+## Top 10 Cities by Frequency
+- Interactive bar chart saved as top_cities.html.
+- Example data (approximate, due to random sampling):
+  City                count
+  ASHEBORO            5600
+  MESA                5580
+  FORT WORTH          5570
+  SPRINGVILLE         5560
+  PARC PARQUE         5550
+  HOLT                5540
+  HOMOSASSA           5530
+  SPRING GARDEN       5520
+  CINGULAR WIRELESS   5510
+  ASH HILL            5500
+- Description: Horizontal bar chart showing top cities with counts ~5,500-5,600.
+
+## Scatter Plot for Data Validation
+- Interactive scatter plot saved as record_by_state.html.
+- Description: Scatter plot of 1000 sampled records with RecordNumber (1 to 100,000) on x-axis and State on y-axis, distributed evenly across states.
+
+## Export for Submission
+- HTML file Task3_DataVisualization.html generated with code and embedded plots.
+```
